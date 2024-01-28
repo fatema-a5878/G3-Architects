@@ -3,42 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G3 Architects Web</title>
-    <link rel="stylesheet" href="style.css">
+    <title>G3 Architects - Home</title>
+    <!-- Tailwind & Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .font{
+            font-family: 'Work Sans', sans-serif;
+        }
+    </style>
 </head>
-<body>
+<body class="font">
     <header>
-        <!-- Nav bar start -->
         <nav>
-            <div>
-                <h3 class="primary-color">G3 Architects</h3>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Login</a></li>
-                </ul>
-            </div>
+            <div class="navbar bg-base-100 flex justify-between " >
+                <div>
+                    <div class="">
+                        <div class="dropdown">
+                            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                            </div>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                                <li><a>Home</a></li>
+                                <li><a>About</a></li>
+                                <li><a>Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <a class="btn btn-ghost text-xl lg:text-5xl font-bold">G3 Architects</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                          <li><a>Home</a></li>
+                          <li><a href="#">About</a></li>
+                          <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <a class="btn">Login</a>
+                    </div>
+                </div>
+              </div>
         </nav>
-        <!-- Nav bar end -->
-        <!-- Banner starts -->
-        <div class="banner">
-            <div class="banner-content">
-                <p class="banner-title primary-color">Brand New<br> Group of Architects</p>
-                <p class="bnr-sub-title secondary-color">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
-                <button class="btn-primary">Explore More</button>
-            </div>
-            <div class="banner-img">
-                <img src="./images/banner.png" alt="">
-            </div>
-        </div>
     </header>
-    <!-- Header end -->
     <main>
 
     </main>
